@@ -16,7 +16,7 @@ import { INavData } from '@coreui/angular';
   },
   {
     name: 'اشخاص',
-    url: '/base-data/users',
+    url: '/base-data/party',
     iconComponent: { name: 'cil-user' }
   },
 //   {

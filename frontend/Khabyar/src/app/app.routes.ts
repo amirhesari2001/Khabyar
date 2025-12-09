@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { PartyComponent } from './pages/basedata/party/party.component';
 
 export const routes: Routes = [
   {
@@ -52,6 +53,10 @@ export const routes: Routes = [
       {
         path: 'pages',
         loadChildren: () => import('./views/pages/routes').then((m) => m.routes)
+      },
+      {
+        path: 'base-data/party',
+        component: PartyComponent
       }
     ]
   },
