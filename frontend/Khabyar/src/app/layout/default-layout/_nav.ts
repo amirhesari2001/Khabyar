@@ -19,16 +19,31 @@ import { INavData } from '@coreui/angular';
     url: '/base-data/party',
     iconComponent: { name: 'cil-user' }
   },
-//   {
-//     name: 'Typography',
-//     url: '/theme/typography',
-//     linkProps: { fragment: 'headings' },
-//     iconComponent: { name: 'cil-pencil' }
-//   },
-//   {
-//     name: 'Components',
-//     title: true
-//   },
+  {
+    name: 'نوع خدمت',
+    url: '/base-data/service-type',
+    linkProps: { fragment: 'headings' },
+    iconComponent: { name: 'cil-settings' }
+  },
+  {
+    name: 'خدمت',
+    url: '/base-data/service',
+    iconComponent: { name: 'cil-equalizer' }
+  },
+  {
+    name: 'تراکنش ها',
+    title: true
+  },
+  {
+    name: 'رسید دریافت',
+    url: '/base-data/receipt',
+    iconComponent: { name: 'cil-page' }
+  },
+  {
+    name: 'آنالیز حساب',
+    url: '/base-data/analyze',
+    iconComponent: { name: 'cil-page' }
+  },
 //   {
 //     name: 'Base',
 //     url: '/base',
