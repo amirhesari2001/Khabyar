@@ -1,19 +1,20 @@
-<!-- <c-footer
-  class="sticky-top bg-white border-bottom py-2 d-flex justify-content-end"
+<c-footer
+  class="sticky-top border-bottom py-2 d-flex justify-content-end"
+  style="z-index: -100;"
 >
-  <button
-    cButton
-    color="primary"
-    class="d-flex align-items-center gap-1"
-    size="sm"
-  >
-    <svg cIcon name="cil-save"></svg>
-    ذخیره
-  </button>
-  <button cButton color="secondary" size="sm">
-    <svg cIcon name="cil-list" class="me-1" width="14" height="14"></svg>
-  </button>
-</c-footer> -->
+  <c-header-nav class="d-none d-md-flex ms-auto">
+    <button cButton size="sm" class="m-1" color="info">
+        <svg cIcon class="my-1" name="cilList"></svg>
+    </button>
+    <button
+      cButton
+      class="d-flex align-items-center m-1"
+      size="sm"
+    >
+      <svg cIcon name="cil-save"></svg>
+    </button>
+  </c-header-nav>
+</c-footer>
 
 <c-container breakpoint="lg" class="h-auto mt-4">
   <c-card>

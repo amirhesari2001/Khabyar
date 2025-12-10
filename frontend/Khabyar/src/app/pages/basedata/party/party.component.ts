@@ -11,6 +11,7 @@ import {
   FormControlDirective,
   FormDirective,
   FormLabelDirective,
+  HeaderNavComponent,
   NavComponent,
   NavItemComponent,
   RowComponent,
@@ -22,6 +23,7 @@ import { IconComponent, IconModule } from '@coreui/icons-angular';
   selector: 'app-party',
   imports: [
     IconModule,
+    HeaderNavComponent,
     CardHeaderComponent,
     FooterComponent,
     IconComponent,
