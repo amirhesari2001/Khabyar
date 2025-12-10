@@ -1,3 +1,4 @@
+import { cilList, cilShieldAlt } from '@coreui/icons';
 import { Component } from '@angular/core';
 import {
   ButtonDirective,
@@ -6,18 +7,23 @@ import {
   CardHeaderComponent,
   ColComponent,
   ContainerComponent,
+  FooterComponent,
   FormControlDirective,
   FormDirective,
   FormLabelDirective,
+  NavComponent,
+  NavItemComponent,
   RowComponent,
 } from '@coreui/angular';
 import { DefaultFooterComponent } from '../../../layout';
-import { IconComponent } from '@coreui/icons-angular';
+import { IconComponent, IconModule } from '@coreui/icons-angular';
 
 @Component({
   selector: 'app-party',
   imports: [
+    IconModule,
     CardHeaderComponent,
+    FooterComponent,
     IconComponent,
     ButtonDirective,
     CardComponent,
@@ -28,7 +34,9 @@ import { IconComponent } from '@coreui/icons-angular';
     DefaultFooterComponent,
     FormControlDirective,
     FormLabelDirective,
-    ContainerComponent
+    ContainerComponent,
+    NavComponent,
+    NavItemComponent
     // FormSelectDirective,
     // FormCheckComponent,
     // FormCheckInputDirective,
@@ -41,4 +49,7 @@ import { IconComponent } from '@coreui/icons-angular';
   templateUrl: './party.component.html',
   styleUrl: './party.component.scss',
 })
-export class PartyComponent {}
+export class PartyComponent {
+  icons = { cilList, cilShieldAlt };
+
+}
