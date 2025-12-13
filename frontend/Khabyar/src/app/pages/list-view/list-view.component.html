@@ -1,0 +1,23 @@
+<c-footer
+  class="sticky-top border-bottom py-2 d-flex justify-content-end"
+  style="z-index: -100"
+>
+  <c-header-nav class="d-none d-md-flex ms-auto">
+    <button cButton class="d-flex align-items-center m-1" size="sm">
+      <svg [cIcon]="icons.cilPlus" width="25" title="Shield Icon"></svg>
+    </button>
+  </c-header-nav>
+</c-footer>
+
+<c-container breakpoint="lg" class="h-auto mt-4">
+  <div class="ag-theme-quartz" dir="rtl">
+    <ag-grid-angular
+      [rowData]="rowData"
+      [enableRtl]="true"
+      [columnDefs]="columnDefs"
+      [theme]="gridTheme"
+      style="height: 200px"
+    >
+    </ag-grid-angular>
+  </div>
+</c-container>

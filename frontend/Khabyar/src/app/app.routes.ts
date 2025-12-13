@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { PartyComponent } from './pages/basedata/party/party.component';
-
+import {ListViewComponent} from './pages/list-view/list-view.component';
 export const routes: Routes = [
   {
     path: '',
@@ -57,6 +57,10 @@ export const routes: Routes = [
       {
         path: 'base-data/party',
         component: PartyComponent
+      },
+      {
+        path: 'list-view',
+        component: ListViewComponent
       }
     ]
   },
