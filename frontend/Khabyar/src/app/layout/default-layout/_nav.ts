@@ -20,15 +20,15 @@ import { INavData } from '@coreui/angular';
     iconComponent: { name: 'cil-user' }
   },
   {
-    name: 'نوع خدمت',
-    url: '/base-data/service-type',
-    linkProps: { fragment: 'headings' },
-    iconComponent: { name: 'cil-settings' }
-  },
-  {
     name: 'خدمت',
     url: '/base-data/service',
-    iconComponent: { name: 'cil-equalizer' }
+    linkProps: { fragment: 'headings' },
+    iconComponent: { name: 'cil-puzzle' }
+  },
+  {
+    name: 'نرخ',
+    url: '/base-data/rate',
+    iconComponent: { name: 'cil-calculator' }
   },
   {
     name: 'تراکنش ها',

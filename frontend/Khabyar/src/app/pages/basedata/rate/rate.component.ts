@@ -1,4 +1,3 @@
-import { cilList, cilShieldAlt } from '@coreui/icons';
 import { Component } from '@angular/core';
 import {
   ButtonDirective,
@@ -16,11 +15,11 @@ import {
   NavItemComponent,
   RowComponent,
 } from '@coreui/angular';
-import { DefaultFooterComponent } from '../../../layout';
 import { IconComponent, IconModule } from '@coreui/icons-angular';
+import { DefaultFooterComponent } from '../../../layout';
 
 @Component({
-  selector: 'app-party',
+  selector: 'app-rate',
   imports: [
     IconModule,
     HeaderNavComponent,
@@ -39,10 +38,9 @@ import { IconComponent, IconModule } from '@coreui/icons-angular';
     ContainerComponent,
     NavItemComponent
   ],
-  templateUrl: './party.component.html',
-  styleUrl: './party.component.scss',
+  templateUrl: './rate.component.html',
+  styleUrl: './rate.component.scss',
 })
-export class PartyComponent {
-  icons = { cilList, cilShieldAlt };
+export class RateComponent {
 
 }
